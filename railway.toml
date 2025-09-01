@@ -3,5 +3,9 @@ builder = "nixpacks"
 
 [deploy]
 healthcheckPath = "/"
-healthcheckTimeout = 100
+healthcheckTimeout = 300
 restartPolicyType = "ON_FAILURE"
+
+[nixpacks]
+aptPkgs = ["python3", "python3-pip"]
+pythonVersion = "3.11"
